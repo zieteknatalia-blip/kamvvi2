@@ -52,6 +52,7 @@
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    scroll-padding-top: var(--nav-height);
   }
 
   body {
@@ -535,6 +536,7 @@
   background: var(--color-bg);
   padding: clamp(3.5rem, 6vw, 5rem) 0;
   overflow: hidden;
+  scroll-margin-top: var(--nav-height);
 }
 
 .about__inner {
@@ -650,9 +652,10 @@
 
 .offer {
   position: relative;
-  padding: clamp(3.5rem, 6vw, 5rem) 0;
+  padding: clamp(4rem, 7vw, 5.5rem) 0;
   background: url('/offer-bg.jpg') center / cover no-repeat;
   overflow: hidden;
+  scroll-margin-top: var(--nav-height);
 }
 
 /* Dark warm taupe overlay */
@@ -761,8 +764,9 @@
 
 .effects {
   background: var(--color-bg);
-  padding: clamp(3.5rem, 6vw, 5rem) 0;
+  padding: clamp(4rem, 7vw, 5.5rem) 0;
   overflow: hidden;
+  scroll-margin-top: var(--nav-height);
 }
 
 .effects__inner {
@@ -936,9 +940,10 @@
 
 .testimonials {
   position: relative;
-  padding: clamp(2.5rem, 4.5vw, 3.5rem) 0;
+  padding: clamp(3.5rem, 6vw, 5rem) 0;
   overflow: hidden;
   background: url('/testimonials1-bg.jpg?v=2') center / cover no-repeat;
+  scroll-margin-top: var(--nav-height);
 }
 
 /* Soft ivory/blush overlay over the texture */
@@ -1268,6 +1273,7 @@
   background: var(--color-bg);
   padding: clamp(4rem, 7vw, 6rem) 0;
   overflow: hidden;
+  scroll-margin-top: var(--nav-height);
 }
 
 .process__inner {
@@ -1440,7 +1446,8 @@
 
 .faq {
   background: var(--color-bg-alt);
-  padding: clamp(3.5rem, 6vw, 5rem) 0;
+  padding: clamp(4rem, 7vw, 5.5rem) 0;
+  scroll-margin-top: var(--nav-height);
 }
 
 .faq__inner {
@@ -1569,9 +1576,10 @@
 
 .contact {
   background: #342B2A;
-  padding: clamp(3.5rem, 6vw, 4.5rem) 0 0;
+  padding: clamp(4rem, 7vw, 5rem) 0 0;
   position: relative;
   overflow: hidden;
+  scroll-margin-top: var(--nav-height);
 }
 
 /* Subtle blush glow accent */

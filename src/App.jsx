@@ -609,19 +609,33 @@ function TestimonialsSection() {
         </div>
 
         <div className="testimonials__footer">
-          <span className="testimonials__counter">
-            {String(current + 1).padStart(2, '0')} / {String(total).padStart(2, '0')}
-          </span>
-          <div className="testimonials__dots">
-            {TESTIMONIALS.map((_, i) => (
-              <button
-                key={i}
-                className={`testimonials__dot ${i === current ? 'testimonials__dot--active' : ''}`}
-                onClick={() => handleDot(i)}
-                aria-label={`Opinia ${i + 1}`}
-              />
-            ))}
+          <button className="testimonials__mobile-arrow testimonials__mobile-arrow--prev" onClick={handlePrev} aria-label="Poprzednia opinia">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <polyline points="12 3 6 9 12 15" />
+            </svg>
+          </button>
+
+          <div className="testimonials__footer-center">
+            <span className="testimonials__counter">
+              {String(current + 1).padStart(2, '0')} / {String(total).padStart(2, '0')}
+            </span>
+            <div className="testimonials__dots">
+              {TESTIMONIALS.map((_, i) => (
+                <button
+                  key={i}
+                  className={`testimonials__dot ${i === current ? 'testimonials__dot--active' : ''}`}
+                  onClick={() => handleDot(i)}
+                  aria-label={`Opinia ${i + 1}`}
+                />
+              ))}
+            </div>
           </div>
+
+          <button className="testimonials__mobile-arrow testimonials__mobile-arrow--next" onClick={handleNext} aria-label="Następna opinia">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <polyline points="6 3 12 9 6 15" />
+            </svg>
+          </button>
         </div>
       </div>
     </section>
